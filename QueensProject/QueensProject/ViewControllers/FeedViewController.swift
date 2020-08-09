@@ -15,6 +15,7 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var feedTable: UITableView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var addEntryButton: UIButton!
     

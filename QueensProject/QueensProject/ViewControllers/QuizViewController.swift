@@ -9,6 +9,10 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var goalText: UITextField!
+    @IBOutlet weak var goal2Text: UITextView!
+    
     var user: User?
 
     override func viewDidLoad() {
@@ -18,13 +22,15 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func quizCompleted(_ sender: Any) {
-        
-        user = User(name: "Tal", startDate: Date(), goal: "Be Happy")
+        user = User(name: nameText.text ?? "", startDate: Date(), goal: goalText.text ?? "", profilepic: UIImage(named: "Profile")!, weekStartDate: Date(), weekUses: 0)
         saveUserData()
+        performSegue(withIdentifier: "quizToHome", sender: self)
     }
+    
     
     private func saveUserData(){
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(user as Any, toFile: User.ArchiveURL.path)
+        
         if(isSuccessfulSave){
             print("User data successfully saved")
         }

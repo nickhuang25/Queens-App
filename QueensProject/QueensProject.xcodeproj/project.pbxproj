@@ -19,6 +19,13 @@
 		373059172470746F00C903D2 /* Gap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373059162470746F00C903D2 /* Gap.swift */; };
 		373FA40A247076D60045A504 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FA409247076D60045A504 /* EntryViewController.swift */; };
 		373FA40C247077FD0045A504 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373FA40B247077FC0045A504 /* QuizViewController.swift */; };
+		F65DC04D24CD2624009F3D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65DC04C24CD2624009F3D25 /* ProfileViewController.swift */; };
+		F65DC05024CD565F009F3D25 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F65DC04F24CD565F009F3D25 /* SourceSansPro-Regular.ttf */; };
+		F65DC05224CD5686009F3D25 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F65DC05124CD5686009F3D25 /* SourceSansPro-Light.ttf */; };
+		F65DC05424CD5693009F3D25 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F65DC05324CD5693009F3D25 /* SourceSansPro-SemiBold.ttf */; };
+		F6AADFDA24DF23FB00800E88 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AADFD924DF23FA00800E88 /* CircularProgressBar.swift */; };
+		F6DF9F8F247F901B00600250 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF9F8E247F901B00600250 /* EntryCell.swift */; };
+		F6FDA5C1247F988D0014AE0F /* GapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FDA5C0247F988D0014AE0F /* GapTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		373059162470746F00C903D2 /* Gap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gap.swift; sourceTree = "<group>"; };
 		373FA409247076D60045A504 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		373FA40B247077FC0045A504 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		F65DC04C24CD2624009F3D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F65DC04F24CD565F009F3D25 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "../../../../../../../Downloads/Source_Sans_Pro/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		F65DC05124CD5686009F3D25 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Light.ttf"; path = "../../../../../../../Downloads/Source_Sans_Pro/SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		F65DC05324CD5693009F3D25 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-SemiBold.ttf"; path = "../../../../../../../Downloads/Source_Sans_Pro/SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		F6AADFD924DF23FA00800E88 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		F6DF9F8E247F901B00600250 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryCell.swift; path = ViewControllers/EntryCell.swift; sourceTree = "<group>"; };
+		F6FDA5C0247F988D0014AE0F /* GapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +82,13 @@
 		37004C9F23F0AE1B00D7F1DB /* QueensProject */ = {
 			isa = PBXGroup;
 			children = (
+				F65DC04E24CD564F009F3D25 /* Fonts */,
 				3730590F24705B5900C903D2 /* Models */,
 				3730590E24705B4C00C903D2 /* ViewControllers */,
 				37004CA023F0AE1B00D7F1DB /* AppDelegate.swift */,
 				37004CA223F0AE1B00D7F1DB /* SceneDelegate.swift */,
 				37004CA623F0AE1B00D7F1DB /* Main.storyboard */,
+				F6DF9F8E247F901B00600250 /* EntryCell.swift */,
 				37004CA923F0AE1E00D7F1DB /* Assets.xcassets */,
 				37004CAB23F0AE1E00D7F1DB /* LaunchScreen.storyboard */,
 				37004CAE23F0AE1E00D7F1DB /* Info.plist */,
@@ -88,6 +104,8 @@
 				373059142470726700C903D2 /* FeedViewController.swift */,
 				373FA409247076D60045A504 /* EntryViewController.swift */,
 				373FA40B247077FC0045A504 /* QuizViewController.swift */,
+				F6FDA5C0247F988D0014AE0F /* GapTableViewController.swift */,
+				F65DC04C24CD2624009F3D25 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,8 +115,19 @@
 			children = (
 				37305910247066E300C903D2 /* User.swift */,
 				373059162470746F00C903D2 /* Gap.swift */,
+				F6AADFD924DF23FA00800E88 /* CircularProgressBar.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F65DC04E24CD564F009F3D25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F65DC05324CD5693009F3D25 /* SourceSansPro-SemiBold.ttf */,
+				F65DC05124CD5686009F3D25 /* SourceSansPro-Light.ttf */,
+				F65DC04F24CD565F009F3D25 /* SourceSansPro-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +191,9 @@
 				37004CAD23F0AE1E00D7F1DB /* LaunchScreen.storyboard in Resources */,
 				37004CAA23F0AE1E00D7F1DB /* Assets.xcassets in Resources */,
 				37004CA823F0AE1B00D7F1DB /* Main.storyboard in Resources */,
+				F65DC05424CD5693009F3D25 /* SourceSansPro-SemiBold.ttf in Resources */,
+				F65DC05224CD5686009F3D25 /* SourceSansPro-Light.ttf in Resources */,
+				F65DC05024CD565F009F3D25 /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +210,13 @@
 				37004CA523F0AE1B00D7F1DB /* ViewController.swift in Sources */,
 				37004CA123F0AE1B00D7F1DB /* AppDelegate.swift in Sources */,
 				373FA40A247076D60045A504 /* EntryViewController.swift in Sources */,
+				F65DC04D24CD2624009F3D25 /* ProfileViewController.swift in Sources */,
+				F6DF9F8F247F901B00600250 /* EntryCell.swift in Sources */,
+				F6FDA5C1247F988D0014AE0F /* GapTableViewController.swift in Sources */,
 				373FA40C247077FD0045A504 /* QuizViewController.swift in Sources */,
 				373059152470726700C903D2 /* FeedViewController.swift in Sources */,
 				37004CA323F0AE1B00D7F1DB /* SceneDelegate.swift in Sources */,
+				F6AADFDA24DF23FB00800E88 /* CircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

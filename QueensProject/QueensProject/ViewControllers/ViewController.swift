@@ -35,27 +35,31 @@ class ViewController: UIViewController {
     }
     
     func nextStep(){
-        var firstLaunch = isAppAlreadyLaunchedOnce()
+        let firstLaunch = isAppAlreadyLaunchedOnce()
         if(firstLaunch == false){
             print("TAKE QUIZ")
             performSegue(withIdentifier: "launchToQuiz", sender: self)
         }
         else{
             //Retrieve Data from the Device
-            user = loadUserData()
-            print("DATA RETRIEVED")
-            print(user!.name)
+            //user = loadUserData()
+            //print("DATA RETRIEVED")
+            //print(user!.name)
+            //let vc = self.tabBarController?.viewControllers![1] as! HomeViewController
+            //vc.user = user
             performSegue(withIdentifier: "launchToHome", sender: self)
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let nextView = segue.destination as! HomeViewController
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        //let nextView = segue.destination as! HomeViewController
+        let nextView = HomeViewController
         nextView.user = self.user
-    }
+    }*/
     
-    private func loadUserData() -> User{
+   private func loadUserData() -> User{
         return (NSKeyedUnarchiver.unarchiveObject(withFile: User.ArchiveURL.path) as? User)!
+    
     }
 
 }
