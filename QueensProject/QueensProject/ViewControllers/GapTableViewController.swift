@@ -37,6 +37,7 @@ class GapTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
+        navigationItem.leftBarButtonItem?.tintColor = UIColor.black
         tableView.backgroundView = UIImageView(image: UIImage(named: "Feed Background"))
 
         if let savedEntries = loadEntries() {

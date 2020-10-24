@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         print(user!.name)
         logoImage.image = UIImage(named: "Logo")
         // Do any additional setup after loading the view.
-        greetingLabel.text = "Welcome " + user!.name + "!"
+        greetingLabel.text = "Welcome, " + user!.name
         generateQuote()
         //nextButton.setTitle("Upload", for: .normal)
     }

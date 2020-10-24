@@ -36,7 +36,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     profileimg.clipsToBounds = true
     print(Int(user!.weekUses))
     print(Int(user!.goal)!)
-    let progress = Double(Double(user!.weekUses)/Double(user!.goal)!)
+    //let progress = Double(Double(user!.weekUses)/Double(user!.goal)!)
+    let progress = 0.5
     print(progress)
     circularprogressbar.setProgress(to: progress, withAnimation: true)
     //circularprogressbar.safePercent = Int(progress*100)

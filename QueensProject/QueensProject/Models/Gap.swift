@@ -14,14 +14,16 @@ class Gap: NSObject, NSCoding{
         coder.encode(g, forKey: PropertyKey.g)
         coder.encode(a, forKey: PropertyKey.a)
         coder.encode(p, forKey: PropertyKey.p)
+        coder.encode(date, forKey: PropertyKey.date)
     }
     
     required convenience init?(coder: NSCoder) {
         let g = coder.decodeObject(forKey: PropertyKey.g) as! String
         let a = coder.decodeObject(forKey: PropertyKey.a) as! String
         let p = coder.decodeObject(forKey: PropertyKey.p) as! String
+        let date = coder.decodeObject(forKey: PropertyKey.date) as! Date
         // Must call designated initializer.
-        self.init(date: Date(), g: g, a: a, p: p)
+        self.init(date: date, g: g, a: a, p: p)
     }
     
     var date: Date?
@@ -40,6 +42,7 @@ struct PropertyKey {
     static let g = "g"
     static let a = "a"
     static let p = "p"
+    static let date = "date"
 }
     //MARK: Archiving Paths
      
