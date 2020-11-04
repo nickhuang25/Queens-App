@@ -62,6 +62,10 @@ class EntryViewController: UIViewController {
         GLabel.text = "I am grateful for..."
         ALabel.text = "Today's affirmation is..."
         PLabel.text = "I am proud of..."
+        
+        self.GText.backgroundColor = UIColor(patternImage: UIImage(named: "Gbackground")!)
+        self.AText.backgroundColor = UIColor(patternImage: UIImage(named: "Abackground")!)
+        self.PText.backgroundColor = UIColor(patternImage: UIImage(named: "Pbackground")!)
     }
 
     
