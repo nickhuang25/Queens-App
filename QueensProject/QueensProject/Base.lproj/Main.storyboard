@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -180,14 +180,23 @@
             <objects>
                 <viewController title="Instructions View Controller" modalPresentationStyle="fullScreen" id="Zum-24-M78" customClass="InstructionsViewController" customModule="QueensProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xLz-mF-xfD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Background" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-cd-ueN">
+                                <rect key="frame" x="0.0" y="152" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p6-JW-GqT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="783"/>
+                                <rect key="frame" x="20" y="44" width="375" height="950"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-xW-qmn">
-                                        <rect key="frame" x="37" y="44" width="234" height="134.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UfF-Os-iaf">
+                                        <rect key="frame" x="236" y="23" width="141" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-xW-qmn">
+                                        <rect key="frame" x="17" y="41" width="234" height="134.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Hey Queen!
 
 We're so excited to 
@@ -196,12 +205,34 @@ have you join us!</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cII-Ic-lfm">
-                                        <rect key="frame" x="37.5" y="186" width="339" height="328"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="328" id="7jt-WW-G6v"/>
-                                            <constraint firstAttribute="width" constant="339" id="cI1-4h-FKb"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've already taken the first step by downloading!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-W8-i8G">
+                                        <rect key="frame" x="17" y="564" width="339" height="50.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to our community of empowered women empowering women &lt;3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wMu-E5-Kcn">
+                                        <rect key="frame" x="18" y="644" width="339" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pft-Pu-z0E">
+                                        <rect key="frame" x="92" y="783" width="190" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="29"/>
+                                        <state key="normal" title="Get Started">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="iD5-ZX-UMw" kind="presentation" modalPresentationStyle="fullScreen" id="f9B-26-yuG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cII-Ic-lfm">
+                                        <rect key="frame" x="17" y="203" width="339" height="328"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">This app is designed to be your personal platform to reflect and practice self-love.
 
 At a time of extreme digital consumption, human disconnect, and mental health stigmas, it is important to take time for ourselves and actively stay present.
@@ -211,71 +242,31 @@ We hope this tool serves you as much as it does us, within whatever capcity work
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You've already taken the first step by downloading!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-W8-i8G">
-                                        <rect key="frame" x="37" y="534" width="339" height="50.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="339" id="bnI-x2-1Cm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to our community of empowered women empowering women &lt;3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wMu-E5-Kcn">
-                                        <rect key="frame" x="37" y="592" width="339" height="76"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="339" id="T70-Mr-dca"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pft-Pu-z0E">
-                                        <rect key="frame" x="138" y="710" width="138" height="39"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="39" id="NmI-mc-Egn"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="tg6-TQ-qVw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="19"/>
-                                        <state key="normal" title="Get Started">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="iD5-ZX-UMw" kind="presentation" modalPresentationStyle="fullScreen" id="f9B-26-yuG"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UfF-Os-iaf">
-                                        <rect key="frame" x="236" y="23" width="141" height="122"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="122" id="VjA-pv-5yR"/>
-                                            <constraint firstAttribute="width" constant="141" id="ywk-Ye-uyJ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home Background" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-cd-ueN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="WNa-9Y-tZ5" firstAttribute="bottom" secondItem="pft-Pu-z0E" secondAttribute="bottom" constant="34" id="KhB-Gr-2OE"/>
-                                    <constraint firstItem="wMu-E5-Kcn" firstAttribute="top" secondItem="eoP-W8-i8G" secondAttribute="bottom" constant="7.5" id="OXi-Be-AfI"/>
-                                    <constraint firstItem="cII-Ic-lfm" firstAttribute="top" secondItem="7Vj-xW-qmn" secondAttribute="bottom" constant="7.5" id="dAl-rK-iNM"/>
-                                    <constraint firstItem="eoP-W8-i8G" firstAttribute="top" secondItem="cII-Ic-lfm" secondAttribute="bottom" constant="20" id="fez-j9-YYl"/>
-                                    <constraint firstItem="cII-Ic-lfm" firstAttribute="centerX" secondItem="4p6-JW-GqT" secondAttribute="centerX" id="uP5-Ww-MIo"/>
-                                    <constraint firstItem="7Vj-xW-qmn" firstAttribute="top" secondItem="WNa-9Y-tZ5" secondAttribute="top" constant="44" id="x4X-1C-ukh"/>
-                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Rkx-7D-zcU"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="WNa-9Y-tZ5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="375" height="950"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="0.0" width="375" height="800"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zvf-eU-DsZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4p6-JW-GqT" firstAttribute="centerX" secondItem="xLz-mF-xfD" secondAttribute="centerX" id="2zd-Kt-3o5"/>
                             <constraint firstItem="4p6-JW-GqT" firstAttribute="leading" secondItem="zvf-eU-DsZ" secondAttribute="leading" id="5qN-5Y-jHy"/>
                             <constraint firstItem="4p6-JW-GqT" firstAttribute="trailing" secondItem="zvf-eU-DsZ" secondAttribute="trailing" id="LlX-d6-4hJ"/>
                             <constraint firstItem="4p6-JW-GqT" firstAttribute="top" secondItem="zvf-eU-DsZ" secondAttribute="top" id="pS4-Bo-8Ks"/>
                             <constraint firstItem="zvf-eU-DsZ" firstAttribute="bottom" secondItem="4p6-JW-GqT" secondAttribute="bottom" constant="35" id="shB-Ik-aw9"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="950"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHg-dn-8ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
