@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class QuizViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var goalText: UITextField!
     @IBOutlet weak var goal2Text: UITextView!
@@ -17,8 +17,14 @@ class QuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.nameText.delegate = self
+        self.goalText.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func quizCompleted(_ sender: Any) {

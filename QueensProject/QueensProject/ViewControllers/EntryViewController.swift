@@ -10,7 +10,7 @@ import UIKit
 import os.log
 import QuartzCore
 
-class EntryViewController: UIViewController {
+class EntryViewController: UIViewController, UITextViewDelegate{
 
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var GLabel: UILabel!
@@ -26,6 +26,10 @@ class EntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.GText.delegate = self
+        self.AText.delegate = self
+        self.PText.delegate = self
 
         // Do any additional setup after loading the view.
         // Set up views if editing an existing entry.
@@ -66,6 +70,11 @@ class EntryViewController: UIViewController {
         self.GText.backgroundColor = UIColor(patternImage: UIImage(named: "Gbackground")!)
         self.AText.backgroundColor = UIColor(patternImage: UIImage(named: "Abackground")!)
         self.PText.backgroundColor = UIColor(patternImage: UIImage(named: "Pbackground")!)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
     

@@ -194,9 +194,8 @@
                                         <rect key="frame" x="236" y="23" width="141" height="122"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-xW-qmn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-xW-qmn">
                                         <rect key="frame" x="17" y="41" width="234" height="134.5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Hey Queen!
 
 We're so excited to 
@@ -243,6 +242,11 @@ We hope this tool serves you as much as it does us, within whatever capcity work
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="GiH-bt-1eX"/>
+                                <constraints>
+                                    <constraint firstItem="7Vj-xW-qmn" firstAttribute="leading" secondItem="WNa-9Y-tZ5" secondAttribute="leading" constant="17" id="JEf-sx-Rm7"/>
+                                    <constraint firstItem="WNa-9Y-tZ5" firstAttribute="trailing" secondItem="7Vj-xW-qmn" secondAttribute="trailing" constant="163" id="laS-dZ-Ixz"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Rkx-7D-zcU"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="WNa-9Y-tZ5"/>
                                 <userDefinedRuntimeAttributes>
@@ -775,7 +779,7 @@ We hope this tool serves you as much as it does us, within whatever capcity work
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="f9B-26-yuG"/>
-        <segue reference="BGI-qH-TKz"/>
+        <segue reference="iKd-Fv-ihv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Feed Background" width="375" height="721"/>
