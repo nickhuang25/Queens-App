@@ -72,10 +72,13 @@ class EntryViewController: UIViewController, UITextViewDelegate{
         self.PText.backgroundColor = UIColor(patternImage: UIImage(named: "Pbackground")!)
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+            if(text == "\n") {
+                textView.resignFirstResponder()
+                return true
+            }
+            return true
+        }
 
     
     //MARK: - Navigation
